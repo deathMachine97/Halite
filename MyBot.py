@@ -30,8 +30,12 @@ game.ready("MyPythonBot")
 #   Here, you log here your id, which you can always fetch from the game object by using my_id.
 logging.info("Successfully created bot! My Player ID is {}.".format(game.my_id))
 
-""" <<<Game Loop>>> """
 
+def create_ship():
+    command_queue.append(me.shipyard.spawn())
+
+
+""" <<<Game Loop>>> """
 while True:
     # This loop handles each turn of the game. The game object changes every turn, and you refresh that state by
     #   running update_frame().
@@ -45,9 +49,7 @@ while True:
     command_queue = []
 
     for ship in me.get_ships():
-
         choices = ship.position.get_surrounding_cardinals()
-
         logging.info(Direction.North)
         # For each of your ships, move randomly if the ship is on a low halite location or the ship is full.
         #   Else, collect halite.
@@ -58,10 +60,14 @@ while True:
         else:
             command_queue.append(ship.stay_still())
 
+    if game.turn_number == 1:
+        create_ship()
+
     # If the game is in the first 200 turns and you have enough halite, spawn a ship.
     # Don't spawn a ship if you currently have a ship at port, though - the ships will collide.
-    if game.turn_number <= 200 and me.halite_amount >= constants.SHIP_COST and not game_map[me.shipyard].is_occupied:
-        command_queue.append(me.shipyard.spawn())
+    # if game.turn_number <= 200 and me.halite_amount >= constants.SHIP_COST and not game_map[me.shipyard].is_occupied:
+        # create_ship()
+        # command_queue.append(me.shipyard.spawn())
 
     # Send your moves back to the game environment, ending this turn.
     game.end_turn(command_queue)
