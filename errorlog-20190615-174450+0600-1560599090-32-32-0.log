@@ -1,0 +1,9 @@
+
+Turn 1
+================================================================
+error: failed to decode bot message: ")" (at position 5)
+Last input received was:
+    )th
+      ^
+SyntaxError: invalid syntax
+

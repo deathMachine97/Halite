@@ -14,7 +14,7 @@ from hlt.positionals import Direction
 import random
 
 # Logging allows you to save messages for yourself. This is required because the regular STDOUT
-#   (print statements) are reserved for the engine-bot communication.
+# (print statements) are reserved for the engine-bot communication.
 import logging
 
 """ <<<Game Begin>>> """
@@ -27,47 +27,59 @@ game = hlt.Game()
 game.ready("MyPythonBot")
 
 # Now that your bot is initialized, save a message to yourself in the log file with some important information.
-#   Here, you log here your id, which you can always fetch from the game object by using my_id.
+#     Here, you log here your id, which you can always fetch from the game object by using my_id.
 logging.info("Successfully created bot! My Player ID is {}.".format(game.my_id))
 
 
 def create_ship():
-    command_queue.append(me.shipyard.spawn())
+	command_queue.append(me.shipyard.spawn())
 
+
+directions = [Direction.North, Direction.South, Direction.East, Direction.West]
 
 """ <<<Game Loop>>> """
 while True:
-    # This loop handles each turn of the game. The game object changes every turn, and you refresh that state by
-    #   running update_frame().
-    game.update_frame()
-    # You extract player metadata and the updated map metadata here for convenience.
-    me = game.me
-    game_map = game.game_map
+	# This loop handles each turn of the game. The game object changes every turn, and you refresh that state by
+	#     running update_frame().
+	game.update_frame()
+	# You extract player metadata and the updated map metadata here for convenience.
+	me = game.me
+	game_map = game.game_map
 
-    # A command queue holds all the commands you will run this turn. You build this list up and submit it at the
-    #   end of the turn.
-    command_queue = []
+	# A command queue holds all the commands you will run this turn. You build this list up and submit it at the
+	#     end of the turn.
+	command_queue = []
 
-    for ship in me.get_ships():
-        choices = ship.position.get_surrounding_cardinals()
-        logging.info(Direction.North)
-        # For each of your ships, move randomly if the ship is on a low halite location or the ship is full.
-        #   Else, collect halite.
-        if game_map[ship.position].halite_amount < constants.MAX_HALITE / 10 or ship.is_full:
-            command_queue.append(
-                ship.move((0, -1))
-            )
-        else:
-            command_queue.append(ship.stay_still())
+	for ship in me.get_ships():
+		new_direction = random.choice(directions)
+		now_doing = Direction.North
+		control = False 
+		# choices = ship.position.get_surrounding_cardinals()
+		# logging.info(Direction.North)
+		# For each of your ships, move randomly if the ship is on a low halite location or the ship is full.
+		#     Else, collect halite.
+		if game_map[ship.position].halite_amount < constants.MAX_HALITE / 1000 or ship.is_full:
+			command_queue.append(
+				ship.move(now_doing)
+			)
+		else:
+			command_queue.append(ship.stay_still())
 
-    if game.turn_number == 1:
-        create_ship()
+		if ship.is_full and control==False:
+			control=True
+			command_queue.clear()
+			command_queue.append(
+				ship.move(Direction.South)
+			)
 
-    # If the game is in the first 200 turns and you have enough halite, spawn a ship.
-    # Don't spawn a ship if you currently have a ship at port, though - the ships will collide.
-    # if game.turn_number <= 200 and me.halite_amount >= constants.SHIP_COST and not game_map[me.shipyard].is_occupied:
-        # create_ship()
-        # command_queue.append(me.shipyard.spawn())
+	if game.turn_number == 1:
+		create_ship()
 
-    # Send your moves back to the game environment, ending this turn.
-    game.end_turn(command_queue)
+	# If the game is in the first 200 turns and you have enough halite, spawn a ship.
+	# Don't spawn a ship if you currently have a ship at port, though - the ships will collide.
+	# if game.turn_number <= 200 and me.halite_amount >= constants.SHIP_COST and not game_map[me.shipyard].is_occupied:
+	# create_ship()
+	# command_queue.append(me.shipyard.spawn())
+
+	# Send your moves back to the game environment, ending this turn.
+	game.end_turn(command_queue)

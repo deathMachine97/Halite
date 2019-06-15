@@ -1,0 +1,9 @@
+
+Turn 1
+================================================================
+error: failed to decode bot message: "i" (at position 5)
+Last input received was:
+    import hlt
+         ^
+SyntaxError: invalid syntax
+
