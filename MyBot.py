@@ -26,12 +26,6 @@ game.ready("MyPythonBot")
 def create_ship():
 	command_queue.append(me.shipyard.spawn())
 
-def is_on_top_part(y_coordination):
-	return y_coordination >= 0 and y_coordination <= 15
-
-def is_on_left_part(x_coordination):
-	return x_coordination >= 0 and x_coordination <= 15
-
 def get_name_of_direction(direction):
 	if direction == Direction.North:
 		return "North"
@@ -56,33 +50,34 @@ def turn_around(oShip,tNow_doing):
 	tDirection,sShip_state = tNow_doing
 	sNew_ship_state = "Return" if sShip_state == "Search" else "Return"
 	sDireaction_name = get_name_of_direction(tDirection)
-	if sDireaction_name == "North" or sDireaction_name == "South":
-		if is_on_top_part(oShip.position.y):
-			tNew_direction =  Direction.South
-		else:
-			tNew_direction =  Direction.North
-	elif sDireaction_name == "West" or sDireaction_name == "Easth":
-		pass
+	sType = "vertically" if (sDireaction_name == "North" or sDireaction_name == "South") else "horizontal"
+	tBase_position = (me.shipyard.position.x,me.shipyard.position.y)
+	tShip_position = (oShip.position.x,oShip.position.y)
+	tNew_direction = find_best_direction_to_home(tBase_position,tShip_position,sType)
 	return (tNew_direction,sNew_ship_state)
-	
 
-def get_type_of_ship(now_doing):
-	
-	pass
+def find_best_direction_to_home(tBase_position,tShip_position,sType):
+	iMap_width = iMap_height = 32
+	iBase_coordinate = tBase_position[1] if sType == "vertically" else tBase_position[0]
+	iShip_coordinate = tShip_position[1] if sType == "vertically" else tShip_position[0]
+	iH_base = iMap_height - iBase_coordinate
+	iH_ship = iMap_height - iShip_coordinate
+	bIs_ship_on_top = True if iBase_coordinate-iShip_coordinate>0 else False
+	logging.info(f"iBase_coordinate {iBase_coordinate} iShip_coordinate {iShip_coordinate}")
+	if bIs_ship_on_top:
+		iIndicator1_turn_count = iMap_height-iH_ship+iH_base
+		iIndicator2_turn_count = iH_ship - iH_base
+	else:
+		iIndicator1_turn_count = iH_base - iH_ship
+		iIndicator2_turn_count = iMap_height - iH_base+iH_ship
+	sIndicator_1_name = Direction.North if sType == "vertically" else Direction.West
+	sIndicator_2_name = Direction.South if sType == "vertically" else Direction.East
+	return sIndicator_1_name if iIndicator1_turn_count<iIndicator2_turn_count else sIndicator_2_name
 
 directions = [Direction.North, Direction.South, Direction.East, Direction.West]
 vertical_ships = [Direction.North, Direction.South]
 horizontal_ships = [Direction.East, Direction.West]
 now_doing = (random.choice(directions),"Search")
-
-
-
-
-
-
-
-
-
 now_doing = (Direction.West,"Search")
 """ <<<Game Loop>>> """
 while True:
@@ -92,20 +87,13 @@ while True:
 	# You extract player metadata and the updated map metadata here for convenience.
 	me = game.me
 	game_map = game.game_map
-
 	# A command queue holds all the commands you will run this turn. You build this list up and submit it at the
 	#     end of the turn.
 	command_queue = []
-
 	for ship in me.get_ships():
 		if ship.halite_amount == 0:
 			tNow_doing = (Direction.West,"Search")
-
-		# new_direction = random.choice(directions)
 		# choices = ship.position.get_surrounding_cardinals()
-		# logging.info(Direction.North)
-		# For each of your ships, move randomly if the ship is on a low halite location or the ship is full.
-		#     Else, collect halite.
 		if game_map[ship.position].halite_amount < constants.MAX_HALITE / 100 or ship.is_full:
 			if ship.is_full:
 				tNow_doing = turn_around(ship,tNow_doing)
@@ -115,7 +103,6 @@ while True:
 		else:
 			command_queue.append(ship.stay_still())
 		logging.info("ship {} type of position {}".format(ship,type(ship.position)))
-
 	if game.turn_number == 1:
 		create_ship()
 
@@ -123,7 +110,5 @@ while True:
 	# Don't spawn a ship if you currently have a ship at port, though - the ships will collide.
 	# if game.turn_number <= 200 and me.halite_amount >= constants.SHIP_COST and not game_map[me.shipyard].is_occupied:
 	# create_ship()
-	# command_queue.append(me.shipyard.spawn())
-
 	# Send your moves back to the game environment, ending this turn.
 	game.end_turn(command_queue)
