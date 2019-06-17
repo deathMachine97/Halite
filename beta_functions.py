@@ -30,9 +30,10 @@ def find_best_direction_to_home(tBase_position,tShip_position,sType):
 		iIndicator2_turn_count = iMap_height - iH_base+iH_ship
 	sIndicator_1_name = "top" if sType == "vertically" else "left"
 	sIndicator_2_name = "bottom" if sType == "vertically" else "right"
-	print(f"{sIndicator_1_name}:{iIndicator1_turn_count},{sIndicator_2_name}:{iIndicator2_turn_count}")
+	return sIndicator_1_name if iIndicator1_turn_count<iIndicator2_turn_count else sIndicator_2_name
 
-sType = "vertically"
+sType = "hor"
 tBase_position = (4,9)
 tShip_position = (10,9)
-find_best_direction_to_home(tBase_position,tShip_position,sType)
+result = find_best_direction_to_home(tBase_position,tShip_position,sType)
+print(result)
