@@ -46,7 +46,7 @@ def get_opposite_direction(direction):
 	elif direction == Direction.East:
 		return Direction.West
 
-def turn_around(oShip,tNow_doing):
+def go_home(oShip,tNow_doing):
 	tDirection,sShip_state = tNow_doing
 	sDireaction_name = get_name_of_direction(tDirection)
 	sType = "vertically" if (sDireaction_name == "North" or sDireaction_name == "South") else "horizontal"
@@ -114,7 +114,7 @@ while True:
 		# choices = ship.position.get_surrounding_cardinals()
 		if game_map[ship.position].halite_amount < constants.MAX_HALITE / 100 or ship.is_full:
 			if ship.is_full or tNow_doing[1] == "Return":
-				tNow_doing = turn_around(ship,tNow_doing)
+				tNow_doing = go_home(ship,tNow_doing)
 			command_queue.append(
 				ship.move(tNow_doing[0])
 			)
