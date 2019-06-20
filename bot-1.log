@@ -1,532 +1,298 @@
 INFO:root:=============== TURN 001 ================
 INFO:root:=============== TURN 002 ================
-INFO:root:ship Ship(id=1, Position(23, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 003 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 004 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=10 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 005 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=17 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 006 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=22 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 007 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=26 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 008 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=29 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 009 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=29 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 010 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=63 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 011 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=89 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 012 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=108 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 013 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=122 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 014 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=133 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 015 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=141 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 016 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=147 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 017 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=152 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 018 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=155 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 019 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=155 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 020 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=197 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 021 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=228 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 022 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=251 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 023 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=269 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 024 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=282 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 025 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=292 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 026 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=299 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 027 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=305 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 028 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=309 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 029 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=312 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 030 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=312 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 031 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=426 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 032 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=511 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 033 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=575 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 034 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=623 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 035 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=659 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 036 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=686 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 037 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=706 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 038 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=721 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 039 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=733 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 040 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=742 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 041 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=748 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 042 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=753 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 043 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=757 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 044 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=757 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 045 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=883 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 046 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=977 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (4, (0, 1))		((0, -1), 'Search')
 INFO:root:=============== TURN 047 ================
-INFO:root:iBase_coordinate 23 iShip_coordinate 18
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=1000 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (3, (0, 1))		((0, 1), 'Return')
 INFO:root:=============== TURN 048 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=975 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (2, (0, 1))		((0, 1), 'Return')
 INFO:root:=============== TURN 049 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=975 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (1, (0, 1))		((0, 1), 'Return')
 INFO:root:=============== TURN 050 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=975 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 051 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=975 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 052 ================
-INFO:root:ship Ship(id=1, Position(23, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 053 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 054 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 055 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 056 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 057 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 058 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=65 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 059 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=114 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 060 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=151 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 061 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=178 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 062 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=199 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 063 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=214 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 064 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=226 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 065 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=235 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 066 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 067 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=246 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 068 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=250 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 069 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=250 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 070 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=322 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 071 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=376 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 072 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=417 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 073 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=447 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 074 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=470 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 075 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=487 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 076 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=500 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 077 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=510 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 078 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=517 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 079 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=522 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 080 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=526 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 081 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=529 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 082 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=529 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 083 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=679 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 084 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=792 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 085 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=877 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 086 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=940 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 087 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=988 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 088 ================
-INFO:root:iBase_coordinate 23 iShip_coordinate 16
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=1000 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 089 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=988 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 090 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=988 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 091 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=988 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 092 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=988 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 093 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=988 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 094 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=988 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 095 ================
-INFO:root:ship Ship(id=1, Position(23, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 096 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 097 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 098 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 099 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 100 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 101 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 102 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 2 условие (1, (-1, 0))		((0, -1), 'Search')
 INFO:root:=============== TURN 103 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=33 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 104 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=57 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (4, (0, 1))		((-1, 0), 'Return')
 INFO:root:=============== TURN 105 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=75 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (3, (0, 1))		((0, 1), 'Return')
 INFO:root:=============== TURN 106 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=89 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (2, (0, 1))		((0, 1), 'Return')
 INFO:root:=============== TURN 107 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=99 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (1, (0, 1))		((0, 1), 'Return')
 INFO:root:=============== TURN 108 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=107 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 109 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=113 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 110 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=117 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 111 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=120 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 112 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=120 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 113 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=270 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 114 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=383 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 115 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=468 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 116 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=531 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 117 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=579 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 118 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=615 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 119 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=642 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 120 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=662 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 121 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=677 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 122 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=688 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 123 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=696 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 124 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=702 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 125 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=707 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 126 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=711 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 127 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=711 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 128 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=783 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 129 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=837 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 130 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=878 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 131 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=908 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 132 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=931 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 133 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=948 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 134 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=961 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 135 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=971 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 136 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=978 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 137 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=983 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 138 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=987 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 139 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=990 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 140 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=990 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 141 ================
-INFO:root:iBase_coordinate 23 iShip_coordinate 13
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=1000 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 142 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=951 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 143 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=951 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 144 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=951 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 145 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=951 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 146 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=951 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 147 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=951 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 148 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=951 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 149 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=951 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 150 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=951 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 151 ================
-INFO:root:ship Ship(id=1, Position(23, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 152 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 153 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 154 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 155 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 156 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 157 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 158 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 2 условие (1, (1, 0))		((0, -1), 'Search')
 INFO:root:=============== TURN 159 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 160 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 161 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 162 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=123 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (4, (0, 1))		((1, 0), 'Return')
 INFO:root:=============== TURN 163 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=216 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (3, (0, 1))		((0, 1), 'Return')
 INFO:root:=============== TURN 164 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=285 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (2, (0, 1))		((0, 1), 'Return')
 INFO:root:=============== TURN 165 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=337 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (1, (0, 1))		((0, 1), 'Return')
 INFO:root:=============== TURN 166 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=376 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 167 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=405 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 168 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=427 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 169 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=444 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 170 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=456 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 171 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=465 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 172 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=472 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 173 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=477 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 174 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=481 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 175 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=484 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 176 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=484 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 177 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=598 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 178 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=683 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 179 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=747 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 180 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=795 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 181 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=831 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 182 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=858 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 183 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=878 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 184 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=893 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 185 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=905 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 186 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=914 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 187 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=920 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 188 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=925 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 189 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=929 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 190 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=929 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 191 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=971 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 192 ================
-INFO:root:iBase_coordinate 23 iShip_coordinate 11
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=1000 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 193 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 194 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 195 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 196 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 197 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 198 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 199 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 200 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 201 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 202 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 203 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=991 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 204 ================
-INFO:root:ship Ship(id=1, Position(23, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 205 ================
-INFO:root:ship Ship(id=1, Position(22, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 206 ================
-INFO:root:ship Ship(id=1, Position(21, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 207 ================
-INFO:root:ship Ship(id=1, Position(20, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 208 ================
-INFO:root:ship Ship(id=1, Position(19, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 209 ================
-INFO:root:ship Ship(id=1, Position(18, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 210 ================
-INFO:root:ship Ship(id=1, Position(17, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 211 ================
-INFO:root:ship Ship(id=1, Position(16, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 212 ================
-INFO:root:ship Ship(id=1, Position(15, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 213 ================
-INFO:root:ship Ship(id=1, Position(14, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 214 ================
-INFO:root:ship Ship(id=1, Position(13, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 215 ================
-INFO:root:ship Ship(id=1, Position(12, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 216 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=0 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 217 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=24 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 218 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=42 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 219 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=55 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 220 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=65 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 221 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=73 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 222 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=79 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 223 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=83 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 224 ================
-INFO:root:ship Ship(id=1, Position(11, 16), cargo=86 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 225 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=86 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 226 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=120 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 227 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=146 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 228 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=165 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 229 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=179 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 230 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=190 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 231 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=198 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 232 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=204 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 233 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=209 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 234 ================
-INFO:root:ship Ship(id=1, Position(10, 16), cargo=212 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 235 ================
-INFO:root:ship Ship(id=1, Position(9, 16), cargo=212 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 236 ================
-INFO:root:ship Ship(id=1, Position(9, 16), cargo=222 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 237 ================
-INFO:root:ship Ship(id=1, Position(9, 16), cargo=229 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 238 ================
-INFO:root:ship Ship(id=1, Position(9, 16), cargo=234 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 239 ================
-INFO:root:ship Ship(id=1, Position(9, 16), cargo=238 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 240 ================
-INFO:root:ship Ship(id=1, Position(9, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 241 ================
-INFO:root:ship Ship(id=1, Position(8, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 242 ================
-INFO:root:ship Ship(id=1, Position(7, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 243 ================
-INFO:root:ship Ship(id=1, Position(6, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 244 ================
-INFO:root:ship Ship(id=1, Position(5, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 245 ================
-INFO:root:ship Ship(id=1, Position(4, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 246 ================
-INFO:root:ship Ship(id=1, Position(3, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 247 ================
-INFO:root:ship Ship(id=1, Position(2, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 248 ================
-INFO:root:ship Ship(id=1, Position(1, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 249 ================
-INFO:root:ship Ship(id=1, Position(0, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 250 ================
-INFO:root:ship Ship(id=1, Position(31, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 251 ================
-INFO:root:ship Ship(id=1, Position(30, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 2 условие (1, (0, 1))		((1, 0), 'Search')
 INFO:root:=============== TURN 252 ================
-INFO:root:ship Ship(id=1, Position(29, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 253 ================
-INFO:root:ship Ship(id=1, Position(28, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (10, (-1, 0))		((0, 1), 'Return')
 INFO:root:=============== TURN 254 ================
-INFO:root:ship Ship(id=1, Position(27, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 255 ================
-INFO:root:ship Ship(id=1, Position(26, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
+INFO:root:Выполнено 3 условие (9, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 256 ================
-INFO:root:ship Ship(id=1, Position(25, 16), cargo=241 halite) type of position <class 'hlt.positionals.Position'>
 INFO:root:=============== TURN 257 ================
+INFO:root:Выполнено 3 условие (8, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 258 ================
 INFO:root:=============== TURN 259 ================
+INFO:root:Выполнено 3 условие (7, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 260 ================
 INFO:root:=============== TURN 261 ================
+INFO:root:Выполнено 3 условие (6, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 262 ================
 INFO:root:=============== TURN 263 ================
+INFO:root:Выполнено 3 условие (5, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 264 ================
 INFO:root:=============== TURN 265 ================
+INFO:root:Выполнено 3 условие (4, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 266 ================
 INFO:root:=============== TURN 267 ================
+INFO:root:Выполнено 3 условие (3, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 268 ================
 INFO:root:=============== TURN 269 ================
+INFO:root:Выполнено 3 условие (2, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 270 ================
+INFO:root:Выполнено 3 условие (1, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 271 ================
 INFO:root:=============== TURN 272 ================
 INFO:root:=============== TURN 273 ================
@@ -551,7 +317,9 @@ INFO:root:=============== TURN 291 ================
 INFO:root:=============== TURN 292 ================
 INFO:root:=============== TURN 293 ================
 INFO:root:=============== TURN 294 ================
+INFO:root:Выполнено 3 условие (2, (0, -1))		((0, 1), 'Search')
 INFO:root:=============== TURN 295 ================
+INFO:root:Выполнено 3 условие (1, (0, -1))		((0, -1), 'Return')
 INFO:root:=============== TURN 296 ================
 INFO:root:=============== TURN 297 ================
 INFO:root:=============== TURN 298 ================
@@ -618,19 +386,27 @@ INFO:root:=============== TURN 358 ================
 INFO:root:=============== TURN 359 ================
 INFO:root:=============== TURN 360 ================
 INFO:root:=============== TURN 361 ================
+INFO:root:Выполнено 2 условие (1, (0, -1))		((1, 0), 'Search')
 INFO:root:=============== TURN 362 ================
 INFO:root:=============== TURN 363 ================
+INFO:root:Выполнено 3 условие (7, (-1, 0))		((0, -1), 'Return')
 INFO:root:=============== TURN 364 ================
 INFO:root:=============== TURN 365 ================
+INFO:root:Выполнено 3 условие (6, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 366 ================
 INFO:root:=============== TURN 367 ================
+INFO:root:Выполнено 3 условие (5, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 368 ================
 INFO:root:=============== TURN 369 ================
+INFO:root:Выполнено 3 условие (4, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 370 ================
 INFO:root:=============== TURN 371 ================
+INFO:root:Выполнено 3 условие (3, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 372 ================
 INFO:root:=============== TURN 373 ================
+INFO:root:Выполнено 3 условие (2, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 374 ================
+INFO:root:Выполнено 3 условие (1, (-1, 0))		((-1, 0), 'Return')
 INFO:root:=============== TURN 375 ================
 INFO:root:=============== TURN 376 ================
 INFO:root:=============== TURN 377 ================

@@ -48,13 +48,34 @@ def get_opposite_direction(direction):
 
 def turn_around(oShip,tNow_doing):
 	tDirection,sShip_state = tNow_doing
-	sNew_ship_state = "Return" if sShip_state == "Search" else "Return"
 	sDireaction_name = get_name_of_direction(tDirection)
 	sType = "vertically" if (sDireaction_name == "North" or sDireaction_name == "South") else "horizontal"
 	tBase_position = (me.shipyard.position.x,me.shipyard.position.y)
 	tShip_position = (oShip.position.x,oShip.position.y)
-	tNew_direction = find_best_direction_to_home(tBase_position,tShip_position,sType)
-	return (tNew_direction,sNew_ship_state)
+	if sShip_state == "Return":
+		# Если корабль находится на базе. Находится на стадии планирование
+		if tBase_position[0] == tShip_position[0] and tBase_position[1] == tShip_position[1]:
+			pass
+			# tNew_direction = (0,"stay_still")
+		# Если корабль не находится на оси x или y
+		elif tBase_position[0] != tShip_position[0] and tBase_position[1] != tShip_position[1]:
+			tNew_direction = find_best_direction_to_base_axis(tBase_position,tShip_position)
+			logging.info(f"Выполнено 2 условие {tNew_direction}		{tNow_doing}")
+		# Если корабль находится на оси x или y
+		elif (tBase_position[0] != tShip_position[0] and tBase_position[1] == tShip_position[1]) or (tBase_position[0] == tShip_position[0] and tBase_position[1] != tShip_position[1]):
+			sType = "vertically" if tBase_position[0] == tShip_position[0] else "horizontal"
+			tNew_direction = find_best_direction_to_home(tBase_position,tShip_position,sType)
+			logging.info(f"Выполнено 3 условие {tNew_direction}		{tNow_doing}")
+	return (tNew_direction[1],sShip_state)
+
+def find_best_direction_to_base_axis(tBase_position,tShip_position):
+	dChoice = {}
+	dChoice["horizontal"] = find_best_direction_to_home(tBase_position,tShip_position,"horizontal")
+	dChoice["vertically"] = find_best_direction_to_home(tBase_position,tShip_position,"vertically")
+	if dChoice["horizontal"][0] == dChoice["vertically"][0]:
+		return dChoice[random.choice(["horizontal","vertically"])]
+	else:
+		return dChoice["horizontal"] if dChoice["horizontal"][0]< dChoice["vertically"][0] else dChoice["vertically"]
 
 def find_best_direction_to_home(tBase_position,tShip_position,sType):
 	iMap_width = iMap_height = 32
@@ -63,7 +84,7 @@ def find_best_direction_to_home(tBase_position,tShip_position,sType):
 	iH_base = iMap_height - iBase_coordinate
 	iH_ship = iMap_height - iShip_coordinate
 	bIs_ship_on_top = True if iBase_coordinate-iShip_coordinate>0 else False
-	logging.info(f"iBase_coordinate {iBase_coordinate} iShip_coordinate {iShip_coordinate}")
+	# logging.info(f"iBase_coordinate {iBase_coordinate} iShip_coordinate {iShip_coordinate}")
 	if bIs_ship_on_top:
 		iIndicator1_turn_count = iMap_height-iH_ship+iH_base
 		iIndicator2_turn_count = iH_ship - iH_base
@@ -72,37 +93,34 @@ def find_best_direction_to_home(tBase_position,tShip_position,sType):
 		iIndicator2_turn_count = iMap_height - iH_base+iH_ship
 	sIndicator_1_name = Direction.North if sType == "vertically" else Direction.West
 	sIndicator_2_name = Direction.South if sType == "vertically" else Direction.East
-	return sIndicator_1_name if iIndicator1_turn_count<iIndicator2_turn_count else sIndicator_2_name
+	tOptimal_turn_diraction = sIndicator_1_name if iIndicator1_turn_count<iIndicator2_turn_count else sIndicator_2_name
+	iOptimal_turn_count = iIndicator1_turn_count if iIndicator1_turn_count<iIndicator2_turn_count else iIndicator2_turn_count
+	return (iOptimal_turn_count,tOptimal_turn_diraction)
 
 directions = [Direction.North, Direction.South, Direction.East, Direction.West]
 vertical_ships = [Direction.North, Direction.South]
 horizontal_ships = [Direction.East, Direction.West]
-now_doing = (random.choice(directions),"Search")
-now_doing = (Direction.West,"Search")
+# tNow_doing = (random.choice(directions),"Search")
+# now_doing = (Direction.West,"Search")
 """ <<<Game Loop>>> """
 while True:
-	# This loop handles each turn of the game. The game object changes every turn, and you refresh that state by
-	#     running update_frame().
 	game.update_frame()
-	# You extract player metadata and the updated map metadata here for convenience.
 	me = game.me
 	game_map = game.game_map
-	# A command queue holds all the commands you will run this turn. You build this list up and submit it at the
-	#     end of the turn.
 	command_queue = []
 	for ship in me.get_ships():
 		if ship.halite_amount == 0:
-			tNow_doing = (Direction.West,"Search")
+			tNow_doing = (random.choice(directions),"Search")
 		# choices = ship.position.get_surrounding_cardinals()
 		if game_map[ship.position].halite_amount < constants.MAX_HALITE / 100 or ship.is_full:
-			if ship.is_full:
+			if ship.is_full or tNow_doing[1] == "Return":
 				tNow_doing = turn_around(ship,tNow_doing)
 			command_queue.append(
 				ship.move(tNow_doing[0])
 			)
 		else:
 			command_queue.append(ship.stay_still())
-		logging.info("ship {} type of position {}".format(ship,type(ship.position)))
+		# logging.info("ship {} type of position {}".format(ship,type(ship.position)))
 	if game.turn_number == 1:
 		create_ship()
 
