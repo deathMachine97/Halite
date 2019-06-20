@@ -98,7 +98,9 @@ while True:
 			tNow_doing = (random.choice(directions),"Search")
 		# choices = ship.position.get_surrounding_cardinals()
 		if game_map[ship.position].halite_amount < constants.MAX_HALITE / 100 or ship.is_full:
-			if ship.is_full or tNow_doing[1] == "Return":
+			if ship.is_full:
+				tNow_doing = (tNow_doing[0],"Return")
+			if tNow_doing[1] == "Return":
 				tNow_doing = go_home(ship,tNow_doing)
 			command_queue.append(
 				ship.move(tNow_doing[0])
