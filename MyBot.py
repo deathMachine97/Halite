@@ -37,20 +37,19 @@ def go_home(oShip,tNow_doing):
 	sType = "vertically" if (sDireaction_name == "North" or sDireaction_name == "South") else "horizontal"
 	tBase_position = (me.shipyard.position.x,me.shipyard.position.y)
 	tShip_position = (oShip.position.x,oShip.position.y)
-	if sShip_state == "Return":
-		# Если корабль находится на базе. Находится на стадии планирование
-		if tBase_position[0] == tShip_position[0] and tBase_position[1] == tShip_position[1]:
-			pass
-			# tNew_direction = (0,"stay_still")
-		# Если корабль не находится на оси x или y
-		elif tBase_position[0] != tShip_position[0] and tBase_position[1] != tShip_position[1]:
-			tNew_direction = find_best_direction_to_base_axis(tBase_position,tShip_position)
-			logging.info(f"Выполнено 2 условие {tNew_direction}		{tNow_doing}")
-		# Если корабль находится на оси x или y
-		elif (tBase_position[0] != tShip_position[0] and tBase_position[1] == tShip_position[1]) or (tBase_position[0] == tShip_position[0] and tBase_position[1] != tShip_position[1]):
-			sType = "vertically" if tBase_position[0] == tShip_position[0] else "horizontal"
-			tNew_direction = find_best_direction_to_home(tBase_position,tShip_position,sType)
-			logging.info(f"Выполнено 3 условие {tNew_direction}		{tNow_doing}")
+	# Если корабль находится на базе. Находится на стадии планирование
+	if tBase_position[0] == tShip_position[0] and tBase_position[1] == tShip_position[1]:
+		pass
+		# tNew_direction = (0,"stay_still")
+	# Если корабль не находится на оси x и y
+	elif tBase_position[0] != tShip_position[0] and tBase_position[1] != tShip_position[1]:
+		tNew_direction = find_best_direction_to_base_axis(tBase_position,tShip_position)
+		logging.info(f"Выполнено 2 условие {tNew_direction}		{tNow_doing}")
+	# Если корабль находится на оси x или y
+	elif (tBase_position[0] != tShip_position[0] and tBase_position[1] == tShip_position[1]) or (tBase_position[0] == tShip_position[0] and tBase_position[1] != tShip_position[1]):
+		sType = "vertically" if tBase_position[0] == tShip_position[0] else "horizontal"
+		tNew_direction = find_best_direction_to_home(tBase_position,tShip_position,sType)
+		logging.info(f"Выполнено 3 условие {tNew_direction}		{tNow_doing}")
 	return (tNew_direction[1],sShip_state)
 
 def find_best_direction_to_base_axis(tBase_position,tShip_position):
@@ -83,9 +82,7 @@ def find_best_direction_to_home(tBase_position,tShip_position,sType):
 	return (iOptimal_turn_count,tOptimal_turn_diraction)
 
 directions = [Direction.North, Direction.South, Direction.East, Direction.West]
-vertical_ships = [Direction.North, Direction.South]
-horizontal_ships = [Direction.East, Direction.West]
-# tNow_doing = (random.choice(directions),"Search")
+tNow_doing = (random.choice(directions),"Search")
 # now_doing = (Direction.West,"Search")
 """ <<<Game Loop>>> """
 while True:
@@ -94,7 +91,7 @@ while True:
 	game_map = game.game_map
 	command_queue = []
 	for ship in me.get_ships():
-		if ship.halite_amount == 0:
+		if ship.halite_amount == 0 or tNow_doing[1] == "Search":
 			tNow_doing = (random.choice(directions),"Search")
 		# choices = ship.position.get_surrounding_cardinals()
 		if game_map[ship.position].halite_amount < constants.MAX_HALITE / 100 or ship.is_full:
