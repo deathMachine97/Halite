@@ -1,18 +1,19 @@
 """
 
-	1	2	3	4	5	6	7	8	9	10	11
-1				|							*	1
-2				|								2
-3				|								3
-4				|								4
-5				|								5
-6				|								6
-7				|								7
-8				|								8
-9	-	-	-	0	-	-	-	-	-	-	-	9
-10				|								10
-11				|								11
-	1	2	3	4	5	6	7	8	9	10	11	
+	1	2	3	4	5	6	7	8	9	10	11						1	2	3	4	5	6	7	8	9	10	11
+1				|								1				1				|								1
+2				|								2				2				|								2
+3				|								3				3				|								3
+4				|								4				4				|								4
+5				|								5				5				|	6	5	6					5
+6				|		*						6				6				|	4	2	6					6
+7				|								7				7				|	6	7	6					7
+8				|								8				8				|	7	7	7					8
+9	-	-	-	0	-	-	-	-	-	-	-	9				9	-	-	-	0	-	-	-	-	-	-	-	9
+10				|								10				10				|								10
+11				|								11				11				|								11
+	1	2	3	4	5	6	7	8	9	10	11						1	2	3	4	5	6	7	8	9	10	11
+
 
 
 +	Поиск оптимального путя до базы с оси x или y
@@ -51,9 +52,7 @@ def find_best_direction_to_base_axis(tBase_position,tShip_position):
 	else:
 		return dChoice["horizontal"] if dChoice["horizontal"][0]< dChoice["vertically"][0] else dChoice["vertically"]
 
-def go_home():
-	tBase_position = (4,9)
-	tShip_position = (4,9)
+def go_home(tBase_position,tShip_position):
 	if tBase_position[0] == tShip_position[0] and tBase_position[1] == tShip_position[1]:
 		result = (0,"stay_still")
 	elif tBase_position[0] != tShip_position[0] and tBase_position[1] != tShip_position[1]:
@@ -66,8 +65,47 @@ def go_home():
 
 	print(result)
 
+# tBase_position = (4,9)
+# tShip_position = (6,6)
+# go_home(tBase_position,tShip_position)
 
-go_home()
-# result = find_best_direction_to_home(tBase_position,tShip_position,sType)
-# result = find_best_direction_to_home(tBase_position,tShip_position,sType)
-# print(result)
+
+class Direction:
+	North = (0, -1)
+	South = (0, 1)
+	East = (1, 0)
+	West = (-1, 0)
+	Still = (0, 0)
+	
+	@staticmethod
+	def get_all_cardinals():
+		return [Direction.North, Direction.South, Direction.East, Direction.West]
+
+class Ship:
+	def __init__(self, x, y):
+		self.x = x
+		self.y = y
+	def change_position(self,tDirection):
+		self.tPosition = (self.tPosition[0]+tDirection[0],self.tPosition[1]+tDirection[2])
+	
+	def get_surrounding_cardinals(self):
+		return [current_direction for current_direction in Direction.get_all_cardinals()]
+
+a = Ship(4,6)
+a.get_surrounding_cardinals()
+
+class Base:
+	tPosition = (4,9)
+
+class Map:
+	dGame_map = {
+		(5,5):6,	(6,5):5,	(7,5):6,
+		(5,6):4,	(6,6):2,	(7,6):6,
+		(5,7):6,	(6,7):7,	(7,6):6,
+		(5,8):7,	(6,8):7,	(7,8):7,
+	}
+
+def get_best_profit(tBase_position,tShip_position):
+	# aDirections = [Direction.North, Direction.South, Direction.East, Direction.West, Direction.Still]
+	pass
+
