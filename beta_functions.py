@@ -87,25 +87,27 @@ class Ship:
 		self.y = y
 	def change_position(self,tDirection):
 		self.tPosition = (self.tPosition[0]+tDirection[0],self.tPosition[1]+tDirection[2])
-	
 	def get_surrounding_cardinals(self):
-		return [current_direction for current_direction in Direction.get_all_cardinals()]
-
-a = Ship(4,6)
-a.get_surrounding_cardinals()
-
+		return [(self.x + current_direction[0],self.y + current_direction[1]) for current_direction in Direction.get_all_cardinals()]
+	def minusser(self,tNew_cardinal):
+		return (tNew_cardinal[0]-self.x,tNew_cardinal[1]-self.y)
 class Base:
 	tPosition = (4,9)
 
 class Map:
 	dGame_map = {
 		(5,5):6,	(6,5):5,	(7,5):6,
-		(5,6):4,	(6,6):2,	(7,6):6,
-		(5,7):6,	(6,7):7,	(7,6):6,
+		(5,6):3,	(6,6):2,	(7,6):6,
+		(5,7):6,	(6,7):6,	(7,6):6,
 		(5,8):7,	(6,8):7,	(7,8):7,
 	}
 
-def get_best_profit(tBase_position,tShip_position):
-	# aDirections = [Direction.North, Direction.South, Direction.East, Direction.West, Direction.Still]
-	pass
+def get_best_profit():
+	oShip = Ship(6,6)
+	aAll_cardinals = oShip.get_surrounding_cardinals() + [(oShip.x,oShip.y)]
+	tBest_profitable_cardinal = aAll_cardinals[-1]
+	for cardinal in aAll_cardinals:
+		tBest_profitable_cardinal = cardinal if Map.dGame_map[tBest_profitable_cardinal] < Map.dGame_map[cardinal] else tBest_profitable_cardinal
+	tBest_profitable_direction = oShip.minusser(tBest_profitable_cardinal)
 
+get_best_profit()

@@ -81,6 +81,15 @@ def find_best_direction_to_home(tBase_position,tShip_position,sType):
 	iOptimal_turn_count = iIndicator1_turn_count if iIndicator1_turn_count<iIndicator2_turn_count else iIndicator2_turn_count
 	return (iOptimal_turn_count,tOptimal_turn_diraction)
 
+def find_the_profitable_point(oShip):
+	aAll_cardinals = oShip.position.get_surrounding_cardinals() + [(oShip.position.x,oShip.position.y)]
+	tBest_profitable_cardinal = aAll_cardinals[-1]
+	for cardinal in aAll_cardinals:
+		logging.info(f"THe best !!! {tBest_profitable_cardinal}")
+		tBest_profitable_cardinal = cardinal if game_map[tBest_profitable_cardinal].halite_amount < game_map[cardinal].halite_amount else tBest_profitable_cardinal
+	# logging.info(f"THe best !!! {oShip.position.__add__(tBest_profitable_cardinal)}")
+
+	
 directions = [Direction.North, Direction.South, Direction.East, Direction.West]
 tNow_doing = (random.choice(directions),"Search")
 # now_doing = (Direction.West,"Search")
@@ -92,8 +101,10 @@ while True:
 	command_queue = []
 	for ship in me.get_ships():
 		if ship.halite_amount == 0 or tNow_doing[1] == "Search":
+			find_the_profitable_point(ship)
 			tNow_doing = (random.choice(directions),"Search")
-		# choices = ship.position.get_surrounding_cardinals()
+		choices = ship.position.get_surrounding_cardinals()
+		# logging.info(f"choices {choices}")
 		if game_map[ship.position].halite_amount < constants.MAX_HALITE / 100 or ship.is_full:
 			if ship.is_full:
 				tNow_doing = (tNow_doing[0],"Return")
